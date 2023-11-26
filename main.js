@@ -274,7 +274,7 @@ function drawlevel5() {
     p = map(bird3.currentTime(), 0, bird3.duration() , 0, width);
     noStroke();
     fill(229, 78, 78, 80);
-    rect(0, 300, p, 200);
+    rect(0, 350, p, 200);
   }
 }
 
