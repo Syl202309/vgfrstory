@@ -184,7 +184,7 @@ function setuplevel7() {
 }
 
 function instruction0() {
-  image(img1, 0, 0);
+  image(img1, 0, 5);
 }
 
 function drawlevel0() {
@@ -196,7 +196,7 @@ function drawlevel0() {
 
 function drawlevel1() {
   background(0);
-  image(img2, windowWidth/3,windowHeight/8);
+  image(img2, 0, 5);
     if (!miniaudio.isPlaying() && !isMiniAudioPlaying) {
     miniaudio.play();
     miniaudio.setVolume(0.3);
