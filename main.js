@@ -178,7 +178,7 @@ function setuplevel7() {
 }
 
 function instruction0() {
-  image(img1, 0, 5);
+  image(img1, 5, 5);
 }
 
 function drawlevel0() {
@@ -190,7 +190,7 @@ function drawlevel0() {
 
 function drawlevel1() {
   background(0);
-  image(img2, 0, 5);
+  image(img2, 5, 5);
     if (!miniaudio.isPlaying() && !isMiniAudioPlaying) {
     miniaudio.play();
     miniaudio.setVolume(0.3);
@@ -200,7 +200,7 @@ function drawlevel1() {
 
 function drawlevel2() {
   background(0);
-  image(l1, 0, 5);
+  image(l1, 5, 5);
 }
 
 function drawlevel3() {
@@ -209,7 +209,7 @@ function drawlevel3() {
   if (playing1) {
     // Check if the player sequence is correct
     if (arraysEqual1()) {
-      image(imgwin, windowWidth/3,windowHeight/4);
+      image(imgwin, 5, 5);
     }
   }
 
@@ -237,7 +237,7 @@ function drawlevel3() {
 
 function drawlevel4() {
   background(0);
-  image(imgforest, windowWidth/3,windowHeight/4);
+  image(imgforest, 5, 5);
 }
 
 function drawlevel5() {
@@ -274,7 +274,7 @@ function drawlevel5() {
 
 function drawlevel6() {
   background(0);
-  image(imgfire, windowWidth/3,windowHeight/4);
+  image(imgfire, 5, 5);
 }
 
 function drawlevel7() {
