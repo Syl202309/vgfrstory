@@ -226,7 +226,7 @@ function drawlevel3() {
     k = map(wind2.currentTime(), 0, wind2.duration() , 0, height);
     noStroke();
     fill(135, 100);
-    rect(200, 600, 200, -k);
+    rect(150, 300, 200, -k);
   }
   
   // Right rectangle
@@ -234,7 +234,7 @@ function drawlevel3() {
     l = map(wind3.currentTime(), 0, wind3.duration() , 0, height);
     noStroke();
     fill(255, 241, 204, 80);
-    rect(400, 0, 200, l);
+    rect(200, 0, 200, l);
   }
 }
 
@@ -266,7 +266,7 @@ function drawlevel5() {
     o = map(bird2.currentTime(), 0, bird2.duration() , 0, width);
     noStroke();
     fill(255, 241, 204, 80);
-    rect(600, 200, -o, 200);
+    rect(450, 200, -o, 200);
   }
   
   // Bottom rectangle
@@ -274,7 +274,7 @@ function drawlevel5() {
     p = map(bird3.currentTime(), 0, bird3.duration() , 0, width);
     noStroke();
     fill(229, 78, 78, 80);
-    rect(0, 400, p, 200);
+    rect(0, 300, p, 200);
   }
 }
 
@@ -299,7 +299,7 @@ function drawlevel7() {
   push();
   fill(z/2, 200);
   noStroke();
-  translate(width/4, 150);
+  translate(20, 150);
   rectMode(CENTER);
   rotate(40);
   rect (0,0,z,z);
@@ -312,9 +312,9 @@ function drawlevel7() {
   push();
   noStroke();
   fill(x/2, 200);
-  translate(width/4, 300);
+  translate(20, 300);
   rectMode(CENTER);
-  rotate(40);
+  rotate(60);
   rect (0,0,x,x);
   pop();
   }
