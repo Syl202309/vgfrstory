@@ -87,6 +87,7 @@ function preload() {
 
 function setup() {
 
+  imageMode(CENTER);
   img1 = loadImage('narrative/Group 1.png');
   img2 = loadImage('narrative/mini.png');
   l1 = loadImage('narrative/l1.png');
@@ -183,7 +184,7 @@ function setuplevel7() {
 }
 
 function instruction0() {
-  image(img1, windowWidth/3,windowHeight/4);
+  image(img1, width/2, height/2);
 }
 
 function drawlevel0() {
