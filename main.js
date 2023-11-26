@@ -200,7 +200,7 @@ function drawlevel1() {
 
 function drawlevel2() {
   background(0);
-  image(l1, windowWidth/3,windowHeight/8);
+  image(l1, 0, 5);
 }
 
 function drawlevel3() {
