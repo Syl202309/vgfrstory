@@ -226,7 +226,7 @@ function drawlevel3() {
     k = map(wind2.currentTime(), 0, wind2.duration() , 0, height);
     noStroke();
     fill(135, 100);
-    rect(150, 300, 200, -k);
+    rect(150, 800, 200, -k);
   }
   
   // Right rectangle
@@ -312,7 +312,7 @@ function drawlevel7() {
   push();
   noStroke();
   fill(x/2, 200);
-  translate(20, 300);
+  translate(40, 300);
   rectMode(CENTER);
   rotate(60);
   rect (0,0,x,x);
