@@ -95,12 +95,6 @@ function setup() {
   imgfire = loadImage('narrative/fire.png');
   imgwin = loadImage('narrative/win.png');
   imgfinal = loadImage('narrative/arrive.png');
-  // originalWidth1 = img1.width;
-  // originalHeight1 = img1.height;
-  // originalWidth2 = img2.width; 
-  // originalHeight2 = img2.height;
-  // // Resize the image proportionally to fit the screen
-  // resizeImageToFitScreen();
   
  
   if (currentLevel === 0) {
@@ -143,7 +137,7 @@ function draw() {
 }
 
 function setuplevel0() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 
 }
@@ -154,32 +148,32 @@ function setuplevel1() {
 }
 
 function setuplevel2() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
 function setuplevel3() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
 function setuplevel4() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
 function setuplevel5() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
 function setuplevel6() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
 function setuplevel7() {
-  createCanvas(windowWidth-20, windowHeight - 60);
+  createCanvas(windowWidth, windowHeight-60);
   background(0);
 }
 
