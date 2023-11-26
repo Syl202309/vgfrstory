@@ -82,7 +82,13 @@ function preload() {
 );
 
    document.getElementById('next').addEventListener('click', function() {
-     switchLevel();});
+     switchLevel();
+     if (currentLevel === 4 /* Level where game is completed */) {
+      // Redirect to another website
+      window.location.href = 'https://bramvankooten.github.io/VG4R/ ';
+    }
+    
+    });
 
 function setup() {
 
