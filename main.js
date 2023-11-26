@@ -216,13 +216,15 @@ function drawlevel3() {
   // Left rectangle
   if (drawRect1) {
     j = map(wind1.currentTime(), 0, wind1.duration() , 0, height);
-    fill(105, 100);
+    noStroke();
+    fill(252, 155, 20, 80);
     rect(0, 0, 200, j);
   }
   
   // Middle rectangle
   if (drawRect2) {
     k = map(wind2.currentTime(), 0, wind2.duration() , 0, height);
+    noStroke();
     fill(135, 100);
     rect(200, 600, 200, -k);
   }
@@ -230,7 +232,8 @@ function drawlevel3() {
   // Right rectangle
   if (drawRect3) {
     l = map(wind3.currentTime(), 0, wind3.duration() , 0, height);
-    fill(165, 100);
+    noStroke();
+    fill(255, 241, 204, 80);
     rect(400, 0, 200, l);
   }
 }
@@ -246,13 +249,14 @@ function drawlevel5() {
   if (playing2) {
     // Check if the player sequence is correct
     if (arraysEqual2()) {
-      image(imgwin, windowWidth/3,windowHeight/4);
+      image(imgwin, 5, 5);
     }
   }
 
   // Top rectangle
   if (drawRect4) {
     i = map(bird1.currentTime(), 0, bird1.duration() , 0, width);
+    noStroke();
     fill(105, 100);
     rect(0, 0, i, 200);
   }
@@ -260,14 +264,16 @@ function drawlevel5() {
   // Middle rectangle
   if (drawRect5) {
     o = map(bird2.currentTime(), 0, bird2.duration() , 0, width);
-    fill(135, 100);
+    noStroke();
+    fill(255, 241, 204, 80);
     rect(600, 200, -o, 200);
   }
   
   // Bottom rectangle
   if (drawRect6) {
     p = map(bird3.currentTime(), 0, bird3.duration() , 0, width);
-    fill(165, 100);
+    noStroke();
+    fill(229, 78, 78, 80);
     rect(0, 400, p, 200);
   }
 }
@@ -283,7 +289,7 @@ function drawlevel7() {
   if (playing3) {
     // Check if the player sequence is correct
     if (arraysEqual3()) {
-      image(imgfinal, windowWidth/3,windowHeight/4);
+      image(imgfinal, 5,5);
     }
   }
 
@@ -292,7 +298,8 @@ function drawlevel7() {
   z = map(music1.currentTime(), 0, music1.duration(), 0, 300);
   push();
   fill(z/2, 200);
-  translate(width/2, 150);
+  noStroke();
+  translate(width/4, 150);
   rectMode(CENTER);
   rotate(40);
   rect (0,0,z,z);
@@ -303,8 +310,9 @@ function drawlevel7() {
   if (drawRect8) {
   x = map(music2.currentTime(), 0, music2.duration(), 0, 300);
   push();
+  noStroke();
   fill(x/2, 200);
-  translate(width/2, 300);
+  translate(width/4, 300);
   rectMode(CENTER);
   rotate(40);
   rect (0,0,x,x);
@@ -315,8 +323,9 @@ function drawlevel7() {
   if (drawRect9) {
   c = map(music3.currentTime(), 0, music3.duration(), 0, 300);
   push();
+  noStroke();
   fill(c/2, 200);
-  translate(width/2, 450);
+  translate(width/4, 450);
   rectMode(CENTER);
   rotate(40);
   rect (0,0,c,c);
