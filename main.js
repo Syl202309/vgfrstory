@@ -56,7 +56,7 @@ document.getElementById('sound').addEventListener('click',
 function preload() {
   miniaudio = loadSound('sound/mini.mp3');
   bg1 = loadSound('sound/1/background.mp3');
-  bg1.setVolume(0.05);
+  bg1.setVolume(0.1);
   wind1 = loadSound('sound/1/wind1.mp3');
   wind2 = loadSound('sound/1/wind2.mp3');
   wind3 = loadSound('sound/1/wind3.mp3');
@@ -64,12 +64,12 @@ function preload() {
   wind2.setVolume(0.3);
   wind3.setVolume(0.3);
   bg2 = loadSound('sound/2/background.mp3');
-  bg2.setVolume(0.05);
+  bg2.setVolume(0.08);
   bird1 = loadSound('sound/2/bird1.mp3');
   bird2 = loadSound('sound/2/bird2.mp3');
   bird3 = loadSound('sound/2/bird3.mp3');
   bg3 = loadSound('sound/3/background.mp3');
-  bg3.setVolume(0.05);
+  bg3.setVolume(0.1);
   music1 = loadSound('sound/3/music1.mp3');
   music2 = loadSound('sound/3/music2.mp3');
   music3 = loadSound('sound/3/music3.mp3');
@@ -468,7 +468,7 @@ function playSequence3() {
     } else {
       clearInterval(intervalId3);
     }
-  }, 3000);
+  }, 2500);
 }
 
 function replaySequence1() {
